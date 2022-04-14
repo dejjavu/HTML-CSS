@@ -10,15 +10,15 @@
     list-style: none;
 
     text-decoration: none;
+
+    border: 0.5px solid red;
 }
 
 html {
     font-size: 62.5%;
 }
 
-body {
-    width: 100%;
-}
+
 
 header,
 section {
@@ -28,9 +28,7 @@ section {
 
 /*H E A D E R */
 
-button:hover {
-    background-color: #fcb88b;
-}
+
 
 .hambuger {
     display: none;
@@ -59,6 +57,10 @@ header nav ul {
     gap: 5vh;
 }
 
+header nav ul li a {
+    color: #242E52;
+}
+
 .btnGet {
     font-size: 1.3rem;
     font-weight: 500;
@@ -79,6 +81,10 @@ header nav ul {
 
     justify-content: space-evenly;
     align-items: center;
+}
+
+button:hover {
+    background-color: #fcb88b;
 }
 
 header a:visited {
@@ -378,7 +384,7 @@ footer .footerDivSocial .fa-brands {
 
     cursor: pointer;
 
-    color: #8c8c94;
+    color: #ffff;
 }
 
 footer .footerDivSocial .fa-brands:hover {
@@ -391,6 +397,11 @@ footer .section6 .NavFooter {
 
     justify-content: space-evenly;
     gap: 200px;
+}
+
+footer .link {
+    color: #FFFFFF;
+
 }
 
 
@@ -450,6 +461,10 @@ footer .cpyright {
 
 
 @media screen and (max-width: 1140px) {
+
+    main {
+        max-width: 100%;
+    }
 
     footer {
         display: flex;
@@ -536,7 +551,7 @@ footer .cpyright {
         }
 
         main .section2 .right2 h3 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
 
             text-align: left;
         }
@@ -584,8 +599,7 @@ footer .cpyright {
         main .section4 h2 {
             font-size: 4.0rem;
 
-            width: 0;
-            width: 341px;
+            width: 343PX;
             margin-bottom: 40px;
 
             color: #fff;
@@ -613,11 +627,6 @@ footer .cpyright {
 
             color: #fff;
         }
-
-        .fa-brands:hover {
-            fill: #f3603b;
-        }
-
 
         footer .section6 .NavFooter {
             display: flex;
@@ -670,4 +679,4 @@ footer .cpyright {
         }
 
     }
-    }
+}
